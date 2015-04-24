@@ -1,0 +1,328 @@
+@import 'nib'
+
+global-reset()
+
+@font-face 
+  font-family 'Roboto'
+  src url('fonts/roboto/Roboto-Regular.eot')
+  src url('fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/roboto/Roboto-Regular.woff') format('woff'),
+      url('fonts/roboto/Roboto-Regular.ttf') format('truetype'),
+      url('fonts/roboto/Roboto-Regular.svg#RobotoRegular') format('svg')
+  font-weight normal
+  font-style normal
+@font-face 
+  font-family 'Roboto Thin'
+  src url('fonts/roboto/Roboto-Thin.eot')
+  src url('fonts/roboto/Roboto-This.eot?#iefix') format('embedded-opentype'),
+      url('fonts/roboto/Roboto-This.woff') format('woff'),
+      url('fonts/roboto/Roboto-This.ttf') format('truetype'),
+      url('fonts/roboto/Roboto-This.svg#RobotoThin') format('svg')
+  font-weight normal
+  font-style normal
+  
+.prev, .next
+  cursor pointer
+*::selection
+  background #faba19
+
+.section
+  height 100vh
+
+.container
+  position relative
+  margin 0 auto
+  max-width 1440px
+  clearfix()
+.header, .footer 
+  position fixed
+  height 50px
+  display none
+  width 100%
+  background #333
+  z-index 9
+  text-align center
+  color #f2f2f2
+  padding 20px 0 0 0
+
+.header
+  top 0px
+  .container
+    ul
+      li
+        display inline
+#fullPage
+  width 100%
+.slide-1
+  background url('../images/dsc_0397.jpg') no-repeat
+  background-size cover
+  .background
+    z-index 1
+    background rgba(32,23,19,.7)
+    height 100%
+    text-align center
+    img
+      position absolute
+      transform translateX(-50%)
+      left 50%
+      top 15vh
+      
+    h1
+      font-size 82px
+      font-family 'Helvetica Neue', sans-serif
+      letter-spacing 5px
+      color #fff
+      font-weight 100
+      margin 0 auto
+      width 960px
+      margin-top 45vh
+    p
+      margin 0 auto
+      margin-top 3vh
+      font-size 16px
+      line-height 1.6em
+      color rgba(255,255,255,.9)
+      font-family 'Proxima Nova', sans-serif
+      width 700px
+.slide-2
+  background url('../images/desktop.jpg') no-repeat
+  background-size cover
+  text-align center
+  p
+    color #201713
+    width 960px
+    margin 0 auto
+    font-family 'Proxima Nova', sans-serif
+    font-size 32px
+    line-height 1.5em
+    font-weight 100
+    span
+      background #faba19
+      padding 0 10px 0 10px
+.slide-3
+  background #fff
+  font-family 'Proxima Nova', sans-serif
+  .container
+    width 960px
+    margin-top -100px
+    h1
+      color #faba19
+      font-size 20px
+      text-align center
+      text-transform uppercase
+      width 960px
+      margin 0 auto
+      line-height 30px
+    .zagolovok
+      margin-top 120px
+      margin-bottom 10px
+      font-size 20px
+      line-height 1.4em
+      letter-spacing 1px
+      width 315px
+      margin-left 130px
+    .text
+      font-size 15px
+      line-height 1.6em
+      letter-spacing .4px
+      width 315px
+      margin-left 130px
+    img
+      float left
+    .left
+      display inline-block
+      margin-left 0px
+      margin-right 65px
+    .right
+      margin-right 0px
+      display inline-block
+    .two
+      img
+        margin-left 10px
+.slide-partner
+  .container
+    text-align center
+    img:nth-child(1) 
+      height 250px
+      margin-top -50px
+      margin-bottom 60px
+    img:last-child
+      margin-top 100px
+      height 200px
+    .text
+      font-family 'Proxima Nova', sans-serif
+      color black
+      font-size 35px
+      line-height 43px
+      width 960px
+      margin 0 auto
+      span
+        background #faba19
+        padding 0 10px 0 10px
+.slide-4
+  background #ECEFF2
+  background #fff
+  font-family 'Proxima Nova', sans-serif
+  .image-1
+    background url('../images/cross_fit.png') no-repeat
+    height 100%
+    background-size 100%
+    background-position 50% 50%
+  .image-2
+    background url('../images/toyota_portfolio.png') no-repeat
+    height 100%
+    background-size cover
+    background-position 50% 50%
+  .image-3
+    background url('../images/pics.png') no-repeat
+    height 100%
+    background-size cover
+  .image-4
+    background url('../images/2-1.jpg') no-repeat
+    height 100%
+    background-size cover
+    background-position 50% 50%
+  .image-5
+    background url('../images/trump.png') no-repeat
+    height 100%
+    background-size cover
+    background-position 50% 40%
+  .image-6
+    background url('../images/alfa_people.png') no-repeat
+    height 100%
+    background-size cover
+  .image-7
+    background url('../images/fresh_app.png') no-repeat
+    height 100%
+    background-size cover
+    background-position 50% 50%
+  .image-8
+    background url('../images/full_size.png') no-repeat
+    height 100%
+    background-size cover
+    background-position 50% 50%
+  .image-9
+    background url('../images/adidas+cska.png') no-repeat
+    height 100%
+    background-size cover
+    background-position 50% 50%
+  .image-10
+    background url('../images/iPad_site.png') no-repeat
+    height 100%
+    background-position 50% 50%
+    background-size cover
+  .image-11
+    background url('../images/Unknown.png') no-repeat
+    height 100%
+    background-size cover
+    background-position 50% 50%
+      
+.slide-5
+  @extend .slide-2
+  span
+    background #faba19
+    padding 0 10px 0 10px
+  
+.slide-6
+  font-family 'Proxima Nova', sans-serif
+  .slide 
+    h1
+      color #faba19
+      font-size 20px
+      text-align center
+      text-transform uppercase
+      width 960px
+      margin 0 auto
+      line-height 30px
+    .blocks
+      margin 0 auto
+      width 960px
+      margin-top 80px
+      
+      .zagolovok
+        width 500px
+        margin-bottom 15px
+        font-size 28px
+        line-height 1.1em
+        text-transform none
+        letter-spacing 0px
+        font-weight 100
+        font-style normal
+      .text
+        font-family "Proxima Nova", sans-serif
+        font-size 15px
+        line-height 1.6em
+        letter-spacing .4px
+        font-weight 300
+        font-style normal
+        color rgba(28,28,28,.9)
+        margin-bottom 50px
+      .left
+        display inline-block
+        margin-left 0px
+        margin-right 65px
+        width 430px
+        vertical-align top
+      .right
+        width 460px
+        margin-right 0px
+        display inline-block
+        vertical-align top
+        .three
+          height 263px
+      .column-1, .column-2, .column-3
+        width 290px
+        vertical-align top
+        display inline-block
+        margin-left 25px
+        
+.slide-7
+  .container
+    float left
+    width 50%
+    height 100%
+    a
+      color black
+      text-decoration none
+    .content
+      margin-top 50px
+      margin-left 50px 
+      text-align left
+      h1
+        width 462px
+        padding-bottom 15px
+        font-family "Proxima Nova", sans-serif
+        font-size 22px
+        border-bottom 8px #FFCB00 solid
+      p
+        font-family "Proxima Nova", sans-serif
+        margin-top 10px
+        font-size 20px
+        span 
+          margin-left 5px
+      .number
+        margin-top 200px
+      .social
+        margin-top 230px
+        .icon-facebook2, .icon-dribbble, .icon-instagram19, .icon-tumblr1
+          font-size 40px
+          margin-left 5px
+        .icon-facebook2
+          margin-left 0
+      .copy
+        font-size 13px
+        margin-top 20px
+  #map-canvas 
+    height 100%
+    width 50%
+    float right
+    a[href^="http://maps.google.com/maps"]
+      display none !important
+    .gm-style-cc 
+      display none
+
+    .gmnoprint a, .gmnoprint span 
+      display none
+    
+    .gmnoprint div 
+      background none !important
